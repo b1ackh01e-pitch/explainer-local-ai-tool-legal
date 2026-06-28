@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Explainer — Pricing</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: #0f0f0f;
+      color: #f0f0f0;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 48px 16px;
+    }
+    h1 { font-size: 2rem; font-weight: 700; margin-bottom: 8px; }
+    .subtitle { color: #888; margin-bottom: 48px; font-size: 1rem; }
+    .plans {
+      display: flex;
+      gap: 24px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .plan {
+      background: #1a1a1a;
+      border: 1px solid #2a2a2a;
+      border-radius: 16px;
+      padding: 32px 28px;
+      width: 260px;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+    .plan.popular {
+      border-color: #7c3aed;
+      position: relative;
+    }
+    .badge {
+      position: absolute;
+      top: -12px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: #7c3aed;
+      color: #fff;
+      font-size: 0.75rem;
+      font-weight: 600;
+      padding: 4px 14px;
+      border-radius: 20px;
+      white-space: nowrap;
+    }
+    .plan-name { font-size: 1.1rem; font-weight: 600; color: #ccc; }
+    .price { font-size: 2.4rem; font-weight: 800; }
+    .price span { font-size: 1rem; font-weight: 400; color: #888; }
+    .save { font-size: 0.8rem; color: #7c3aed; font-weight: 600; }
+    ul { list-style: none; display: flex; flex-direction: column; gap: 10px; }
+    li { font-size: 0.9rem; color: #bbb; }
+    li::before { content: "✓  "; color: #7c3aed; font-weight: 700; }
+    .btn {
+      display: block;
+      text-align: center;
+      padding: 12px;
+      border-radius: 10px;
+      font-weight: 600;
+      font-size: 0.95rem;
+      text-decoration: none;
+      margin-top: auto;
+      cursor: pointer;
+      border: none;
+    }
+    .btn-primary { background: #7c3aed; color: #fff; }
+    .btn-outline { background: transparent; color: #f0f0f0; border: 1px solid #3a3a3a; }
+    .footer { margin-top: 48px; font-size: 0.8rem; color: #555; text-align: center; }
+    .footer a { color: #666; text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <h1>Simple, honest pricing</h1>
+  <p class="subtitle">Powered by local AI — no cloud, no waiting.</p>
+
+  <div class="plans">
+
+    <div class="plan">
+      <div class="plan-name">Pro Monthly</div>
+      <div class="price">$4.99 <span>/ month</span></div>
+      <ul>
+        <li>Unlimited explanations</li>
+        <li>Summarize &amp; translate</li>
+        <li>Works on any website</li>
+        <li>100% on-device AI</li>
+      </ul>
+      <a href="https://chromewebstore.google.com/detail/explainer-local-ai-tool/nbffjgnngbnniacpjijclfoeedggmehc" class="btn btn-outline">Get started</a>
+    </div>
+
+    <div class="plan popular">
+      <div class="badge">Best value</div>
+      <div class="plan-name">Pro Yearly</div>
+      <div class="price">$39.99 <span>/ year</span></div>
+      <div class="save">Save 33% vs monthly</div>
+      <ul>
+        <li>Unlimited explanations</li>
+        <li>Summarize &amp; translate</li>
+        <li>Works on any website</li>
+        <li>100% on-device AI</li>
+      </ul>
+      <a href="https://chromewebstore.google.com/detail/explainer-local-ai-tool/nbffjgnngbnniacpjijclfoeedggmehc" class="btn btn-primary">Get started</a>
+    </div>
+
+  </div>
+
+  <div class="footer">
+    14-day money-back guarantee &nbsp;·&nbsp;
+    <a href="refund-policy.md">Refund Policy</a> &nbsp;·&nbsp;
+    <a href="privacy-policy.md">Privacy Policy</a> &nbsp;·&nbsp;
+    <a href="terms-of-service.md">Terms of Service</a>
+  </div>
+</body>
+</html>
